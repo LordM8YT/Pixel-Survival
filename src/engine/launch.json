@@ -1,0 +1,22 @@
+{
+  "configurations": [
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Launch Program",
+      "program": "${workspaceFolder}/${input:programPath}",
+      "preLaunchTask": "build"
+    }
+  ],
+  "inputs": [
+    {
+      "type": "pickString",
+      "id": "programPath",
+      "description": "Select the entry point for your program",
+      "options": [
+        "src/engine/GameEngine.ts",
+        "Pixel survival/src/engine/GameEngine.ts"
+      ]
+    }
+  ]
+}
